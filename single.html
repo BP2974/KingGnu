@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Gnu</title>
+    <style>
+        h1, h2, h3, h4, ul, ol, li, a, p{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            top: 0;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+        }
+        nav h1 img{
+            width: 35px;
+            margin: 5px 20px;
+        }
+        nav li{
+            display: inline-block;
+            margin: 20px 20px;
+            font-weight: bold;
+        }
+        nav a{
+            color: white;
+        }
+        section{
+            margin-top: 61.6px;
+        }
+        section h2{
+            display: inline;
+        }
+        section table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        section table td{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+        section table img{
+            width: 100%;
+        }
+        .text{
+            background-color: gray;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html"><img src="./img/logo_white.svg"></a></h1>
+            <ul>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="album.html">DISCOGRAPHY</a></li>
+                <li><a href="clubGnu.html">CLUB GNU</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="select">
+            <a href="album.html">ALBUM</a>
+            <h2>SINGLE</h2>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td class="text">SINGLE</td>
+                    <td><img src="./img/flash.png"></td>
+                    <td class="text">빈칸</td>
+                    <td><img src="./img/prayer_x.png"></td>
+                    <td class="text">빈칸</td>
+                    <td><img src="./img/hakujitsu.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/hikoutei.png"></td>
+                    <td class="text">빈칸</td>
+                    <td><img src="./img/sanmon.png"></td>
+                    <td class="text">빈칸</td>
+                    <td><img src="./img/awa.png"></td>
+                    <td class="text">빈칸</td>
+                </tr>
+                <tr>
+                    <td class="text">빈칸</td>
+                    <td><img src="./img/boy.png"></td>
+                    <td class="text">빈칸</td>
+                    <td><img src="./img/ichizu.png"></td>
+                    <td class="text">빈칸</td>
+                    <td><img src="./img/chameleon.png"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Gnu</title>
+    <style>
+        h1, h2, h3, h4, ul, ol, li, a, p{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("./img/main.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(1px);
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav h1 img{
+            width: 35px;
+            margin: 5px 20px;
+        }
+        nav li{
+            display: inline-block;
+            margin: 20px 20px;
+            font-weight: bold;
+        }
+        nav a{
+            color: white;
+        }
+        #home{
+            height: calc(100vh - 126.6px);
+            float: right;
+            padding: 30px 50px 0 0;
+        }
+        #home h2{
+            font-weight: lighter;
+            font-style: italic;
+            font-size: 20px;
+            text-align: center;
+            margin: 10px 50px;
+        }
+        #home img{
+            width: 300px;
+        }
+        footer{
+            clear: both;
+            height: 35px;
+        }
+        footer a{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <nav>
+                <h1><a href="index.html"><img src="./img/logo_white.svg"></a></h1>
+                <ul>
+                    <li><a href="history.html">HISTORY</a></li>
+                    <li><a href="album.html">DISCOGRAPHY</a></li>
+                    <li><a href="clubGnu.html">CLUB GNU</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="home">
+            <h2>JAPAN MADE</h2>
+            <img src="./img/logo_w.png">
+        </section>
+        <footer>
+            <a href="https://www.instagram.com/kinggnu.jp/">Instagram</a>
+            <a href="https://twitter.com/KingGnu_JP">Twitter</a>
+            <a href="https://www.youtube.com/c/kinggnuSMEJ">Youtube</a>
+        </footer>
+    </div>
+</body>
+</html>

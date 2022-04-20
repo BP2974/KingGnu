@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Gnu</title>
+    <style>
+        h1, h2, h3, h4, ul, ol, li, a, p{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        nav{
+            top: 0;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+        }
+        nav h1 img{
+            width: 35px;
+            margin: 5px 20px;
+        }
+        nav li{
+            display: inline-block;
+            margin: 20px 20px;
+            font-weight: bold;
+        }
+        nav a{
+            color: white;
+        }
+        #section1{
+            width: 100%;
+            height: 700px;
+            background-attachment: fixed;
+            background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("./img/still_2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #section1 h2{
+            color: white;
+            padding: 100px 0 0 70px;
+            font-size: 70px;
+        }
+        #section2{
+            width: 100%;
+            height: 700px;
+            background-color: aliceblue;
+        }
+        #content1{
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html"><img src="./img/logo_white.svg"></a></h1>
+            <ul>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="album.html">DISCOGRAPHY</a></li>
+                <li><a href="clubGnu.html">CLUB GNU</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="section1">
+        <h2>Tokyo<br />New<br />Mixture<br />Rock</h2>
+    </section>
+    <section id="section2">
+        <h2>HISTORY</h2>
+        <div id="content1">
+            <img src="./img/mad_me.png">
+            <img src="./img/tokoy_chaotic.png">
+            <p>도쿄 예술 대학 출신으로 독자적인 활동을 전개하는 크리에이터 토코다 다이키가 2015년에 Srv.Vinci라는 이름으로 활동을 개시.</p>
+        </div>
+        <div id="content2">
+            <img src="./img/still_3.jpg">
+            <p>그 후, 멤버 체인지를 거쳐, 2015년에 토코다 다이키(Gt.Vo.), 세키유(Drs.Sampler), 아라이 카즈키(Ba.), 이구치 리(Vo.Key.)의 4명 체제.</p>
+        </div>
+        <div id="content3">
+            <img src="./img/still_1.jpeg">
+            <p>2017년 4월 26일, 밴드명을 King Gnu로 개명해 새로운 스타트.</p>
+        </div>
+    </section>
+</body>
+</html>
