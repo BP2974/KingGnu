@@ -39,10 +39,22 @@
             font-weight: bold;
         }
         nav a{
+            color: gray;
+        }
+        nav a:link{
+            color: gray;
+        }
+        nav a:visited{
+            color: gray;
+        }
+        nav a:hover{
+            color: lightgray;
+        }
+        nav a:active{
             color: white;
         }
         #home{
-            height: calc(100vh - 126.6px);
+            height: calc(100vh - 146.6px);
             float: right;
             padding: 30px 50px 0 0;
         }
@@ -59,9 +71,13 @@
         footer{
             clear: both;
             height: 35px;
+            padding-bottom: 20px;
         }
         footer a{
             margin: 20px;
+        }
+        footer img{
+            width: 30px;
         }
     </style>
 </head>
@@ -82,9 +98,12 @@
             <img src="./img/logo_w.png">
         </section>
         <footer>
-            <a href="https://www.instagram.com/kinggnu.jp/">Instagram</a>
-            <a href="https://twitter.com/KingGnu_JP">Twitter</a>
-            <a href="https://www.youtube.com/c/kinggnuSMEJ">Youtube</a>
+            <a href="https://www.instagram.com/kinggnu.jp/" target="_blank">
+                <img src="./img/instagram_g.png" onmouseover="this.src='./img/instagram_w.png'" onmouseout="this.src='./img/instagram_g.png'"></a>
+            <a href="https://twitter.com/KingGnu_JP" target="_blank">
+                <img src="./img/twitter_g.png" onmouseover="this.src='./img/twitter_w.png'" onmouseout="this.src='./img/twitter_g.png'"></a>
+            <a href="https://www.youtube.com/c/kinggnuSMEJ" target="_blank">
+                <img src="./img/youtube_g.png" onmouseover="this.src='./img/youtube_w.png'" onmouseout="this.src='./img/youtube_g.png'"></a>
         </footer>
     </div>
 </body>

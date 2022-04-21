@@ -40,47 +40,93 @@
             font-weight: bold;
         }
         nav a{
+            color: gray;
+        }
+        nav a:link{
+            color: gray;
+        }
+        nav a:visited{
+            color: gray;
+        }
+        nav a:hover{
+            color: lightgray;
+        }
+        nav a:active{
+            color: white;
+        }
+        #page{
             color: white;
         }
         #section1{
             width: 100%;
-            height: 680px;
+            height: 760px;
             background-attachment: fixed;
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("./img/still_2.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
         #section1 h2{
-            color: white;
+            color: gray;
             padding: 100px 0 0 70px;
-            font-size: 70px;
+            font-size: 80px;
+        }
+        #section1 h2 span:hover{
+            color: white;
         }
         #section2{
             width: 100%;
             height: 100%;
-            background-color: white;
-            color: black;
+            background-color: black;
+            color: white;
+            padding: 140px 0;
         }
         #section_title{
-            height: 300px;
-            padding-top: 70px;
+            padding-bottom: 200px;
             vertical-align: middle;
             font-size: 40px;
             text-align: center;
         }
+        #section2 p{
+            display: inline-block;
+            width: 50%;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        .text{
+            padding: 0 30px;
+        }
+        #content{
+            margin: 0 150px;
+            vertical-align: middle;
+        }
+        #content table td{
+            text-align: left;
+            font-size: 20px;
+        }
         #content1 img{
             width: 300px;
         }
+        #col2{
+            width: 540px;
+        }
+        #content2{
+            margin: 250px 0;
+        }
+        #content2 img{
+            width: 600px;
+        }
+        #content3{
+            text-align: center;
+            margin-top: 130px;
+            font-size: 30px;
+        }
+        #content3 p{
+            margin-bottom: 100px;
+        }
         #content3 img{
-            width: 300px;
-        }
-        footer{
-            clear: both;
-            height: 35px;
-        }
-        footer a{
-            margin: 20px;
-            color: black;
+            margin-top: 100px;
+            height: 700px;
         }
     </style>
 </head>
@@ -89,37 +135,41 @@
         <nav>
             <h1><a href="index.html"><img src="./img/logo_white.svg"></a></h1>
             <ul>
-                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="history.html" id="page">HISTORY</a></li>
                 <li><a href="album.html">DISCOGRAPHY</a></li>
                 <li><a href="clubGnu.html">CLUB GNU</a></li>
             </ul>
         </nav>
     </header>
     <section id="section1">
-        <h2>Tokyo<br />New<br />Mixture<br />Rock</h2>
+        <h2><span>Tokyo<br /></span>
+            <span>New<br /></span>
+            <span>Mixture<br /></span>
+            <span>Rock</span></h2>
     </section>
     <section id="section2">
         <div id="section_title">
             <h2>HISTORY</h2>
         </div>
-        <div id="content1">
-            <img src="./img/mad_me.png">
-            <img src="./img/tokoy_chaotic.png">
-            <p>도쿄 예술 대학 출신으로 독자적인 활동을 전개하는 크리에이터 토코다 다이키가 2015년에 Srv.Vinci라는 이름으로 활동을 개시.</p>
-        </div>
-        <div id="content2">
-            <img src="./img/still_3.jpg">
-            <p>그 후, 멤버 체인지를 거쳐, 2015년에 토코다 다이키(Gt.Vo.), 세키유(Drs.Sampler), 아라이 카즈키(Ba.), 이구치 리(Vo.Key.)의 4명 체제.</p>
-        </div>
-        <div id="content3">
-            <img src="./img/still_1.jpeg">
-            <p>2017년 4월 26일, 밴드명을 King Gnu로 개명해 새로운 스타트.</p>
+        <div id="content">
+            <table id="content1">
+                <tr>
+                    <td><img src="./img/mad_me.png"></td>
+                    <td><img src="./img/tokoy_chaotic.png"></td>
+                    <td class="text">도쿄 예술 대학 출신 토코다 다이키가 2015년에 Srv.Vinci라는 이름으로 활동을 개시.</td>
+                </tr>
+            </table>
+            <table id="content2">
+                <tr>
+                    <td colspan="2" id="col2" class="text">그 후, 멤버 체인지를 거쳐, 2015년에 토코다 다이키(Gt.Vo.), 세키유(Drs.Sampler), 아라이 카즈키(Ba.), 이구치 리(Vo.Key.) 4명 체제로 돌입.</td>
+                    <td><img src="./img/still_3.jpg"></td>
+                </tr>
+            </table>
+            <div id="content3">
+                <p>2017년 4월 26일,<br />밴드명을 King Gnu로 개명해 새로운 스타트.</p>
+                <img src="./img/still_1.jpeg">
+            </div>
         </div>
     </section>
-    <footer>
-        <a href="https://www.instagram.com/kinggnu.jp/">Instagram</a>
-        <a href="https://twitter.com/KingGnu_JP">Twitter</a>
-        <a href="https://www.youtube.com/c/kinggnuSMEJ">Youtube</a>
-    </footer>
 </body>
 </html>

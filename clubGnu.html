@@ -18,6 +18,9 @@
             margin: 0;
             padding: 0;
         }
+        ::-webkit-scrollbar{ 
+            display: none;
+        }
         nav{
             top: 0;
             position: fixed;
@@ -36,7 +39,119 @@
             font-weight: bold;
         }
         nav a{
+            color: gray;
+        }
+        nav a:link{
+            color: gray;
+        }
+        nav a:visited{
+            color: gray;
+        }
+        nav a:hover{
+            color: lightgray;
+        }
+        nav a:active{
             color: white;
+        }
+        #page{
+            color: white;
+        }
+        .short_line{
+            margin: 40px auto;
+            width: 140px;
+            border-bottom: 5px solid white;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        #section1{
+            height: 600px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        #section1 h2{
+            margin: 120px 0 50px 0;
+            font-size: 50px;
+        }
+        #section1 img{
+            width: 200px;
+        }
+        #section1 dt{
+            font-size: 25px;
+            font-weight: bold;
+            margin: 30px 0 20px 0;
+        }
+        #section1 dd{
+            margin: 0;
+        }
+        #section2{
+            text-align: center;
+            background-color: black;
+            padding: 30px 0 60px 0;
+            color: white;
+        }
+        #section2 h2{
+            font-size: 30px;
+        }
+        #section2 p{
+            color: #555;
+            line-height: 35px;
+            width: 80%;
+            margin: 0px auto;
+        }
+        #section2 ul{
+            padding: 0px;
+            margin: 0px auto;
+        }
+        #section2 ul li{
+            list-style: none;
+            float: left;
+            width: 20%;
+        }
+        #section2 li{
+            margin: 20px 0;
+            width: calc(25% - 91px);
+            height: 250px;
+            border-right: solid 1px #ccc;
+            padding: 50px;
+        }
+        #section2 ul li:last-child{
+            border-right: none;
+        }
+        #section2 dt{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #section2 dt span{
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        #section2 dt span:hover{
+            color: #d81417;
+        }
+        #section2 dd{
+            margin: 15px 0 0 0;
+        }
+        #section3{
+            height: 150px;
+            padding: 120px 0 120px 0;
+        }
+        #section3 table{
+            margin: auto;
+        }
+        #section3 img{
+            width: 150px;
+            height: 150px;
+            border: 1px solid #ccc;
+            box-shadow: #555 1px 1px 10px;
+            margin-right: 40px;
+        }
+        #section3 p{
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -47,21 +162,66 @@
             <ul>
                 <li><a href="history.html">HISTORY</a></li>
                 <li><a href="album.html">DISCOGRAPHY</a></li>
-                <li><a href="clubGnu.html">CLUB GNU</a></li>
+                <li><a href="clubGnu.html" id="page">CLUB GNU</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section id="section1">
         <h2>CULB GNU</h2>
         <img src="./img/club_gnu.jpg">
-        King Gnu의 공식 팬클럽 CLUB GNU에서는
-라이브 티켓 선행 접수를 비롯해 여기에서만 볼 수 있는 라이브 사진과 동영상 등 충실한 콘텐츠를 즐길 수 있습니다.
-
-CLUB GNU란?
-King Gnu의 공식 모바일 사이트입니다.
-라이브 티켓 선행 접수를 비롯해 여기서 밖에 볼 수 없는 라이브 사진이나 동영상 등
-충실한 콘텐츠를 즐길 수 있습니다.
-        <img src="./img/qr.gif">
+        <dl>
+            <dt>CLUB GNU란?</dt>
+            <dd>King Gnu의 공식 모바일 사이트입니다.<br />
+                라이브 티켓 선행 접수를 비롯해 CLUB GNU를 통해서만 볼 수 있는
+                라이브 사진이나 동영상 등 다양한 콘텐츠를 즐길 수 있습니다.</dd>
+        </dl>
+    </section>
+    <section id="section2">
+        <div class="short_line"></div>
+        <h2>CONTNET</h2>
+        <div class="short_line"></div>
+        <ul class="clearfix">
+            <li>
+                <dl>
+                    <dt>01<span>TICKET</span></dt>
+                    <dd>회원 한정으로 투어나<br />라이브의 티켓 선행접수.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>02<span>PHOTO</span></dt>
+                    <dd>라이브 사진을 전달.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>03<span>MOVIE</span></dt>
+                    <dd>대기실 뒤의 오프샷이나,<br />MV메이킹 영상 등<br />회원 한정 동영상을 공개.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>04<span>INSTANT GNU</span></dt>
+                    <dd>멤버가 직접 찍은<br />셀카 사진 공개.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>05<span>STAFF DIARY</span></dt>
+                    <dd>스태프의 시선으로<br />King Gnu를 알려드립니다.</dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+    <section id="section3">
+        <table>
+            <tr>
+                <td><img src="./img/qr.gif"></td>
+                <td><p>
+                    CLUB GNU는 스마트폰 전용 사이트입니다.<br />
+                    스마트폰에서 QR 코드를 로드해보세요.</p></td>
+            </tr>
+        </table>
     </section>
 </body>
 </html>

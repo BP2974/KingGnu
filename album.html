@@ -18,6 +18,9 @@
             margin: 0;
             padding: 0;
         }
+        ::-webkit-scrollbar{ 
+            display: none;
+        }
         nav{
             top: 0;
             position: fixed;
@@ -36,29 +39,99 @@
             font-weight: bold;
         }
         nav a{
+            color: gray;
+        }
+        nav a:link{
+            color: gray;
+        }
+        nav a:visited{
+            color: gray;
+        }
+        nav a:hover{
+            color: lightgray;
+        }
+        nav a:active{
             color: white;
         }
-        section{
+        #page{
+            color: white;
+        }
+        #select{
             margin-top: 61.6px;
         }
-        section h2{
+        #select h2{
             display: inline;
         }
-        section table{
-            width: 100%;
+        #select{
+            padding: 20px 30px;
+        }
+        #select h2{
+            font-size: 25px;
+            margin-right: 15px;
+        }
+        #select a{
+            font-size: 25px;
+            color: lightgray;
+            font-weight: bold;
+        }
+        #select a:link{
+            color: lightgray;
+        }
+        #select a:visited{
+            color: lightgray;
+        }
+        #select a:hover{
+            color: gray;
+        }
+        #select a:active{
+            color: black;
+        }
+        #list{
+            background-color: lightgray;
+        }
+        #list table{
+            margin: auto;
+            width: 70%;
             border-collapse: collapse;
         }
-        section table td{
-            border: 1px solid black;
-            width: 200px;
-            height: 200px;
-        }
-        section table img{
+        #list table img{
             width: 100%;
         }
-        .text{
-            background-color: gray;
+        .blank{
             height: 80px;
+        }
+        #content{
+            width: 70%;
+            margin: auto;
+            margin-top: 200px;
+        }
+        #content table{
+            margin: 100px auto;
+        }
+        #content img{
+            width: 300px;
+        }
+        #content td{
+            width: 300px;
+        }
+        #content h3{
+            margin: 0 0 15px 5px;
+        }
+        .music{
+            width: 80%;
+            margin: 0px auto;
+        }
+        .music ol{
+            padding-left: 25px;
+        }
+        .music li{
+            margin: 0px;
+            font-size: 14px;
+        }
+        .line{
+            width: 90%;
+            border-bottom: 1px solid #ccc;
+            margin: auto;
         }
     </style>
 </head>
@@ -68,7 +141,7 @@
             <h1><a href="index.html"><img src="./img/logo_white.svg"></a></h1>
             <ul>
                 <li><a href="history.html">HISTORY</a></li>
-                <li><a href="album.html">DISCOGRAPHY</a></li>
+                <li><a href="album.html" id="page">DISCOGRAPHY</a></li>
                 <li><a href="clubGnu.html">CLUB GNU</a></li>
             </ul>
         </nav>
@@ -78,19 +151,86 @@
             <h2>ALBUM</h2>
             <a href="single.html">SINGLE</a>
         </div>
-        <div>
+        <div id="list">
             <table>
                 <tr>
-                    <td class="text">ALBUM</td>
+                    <td class="blank"></td>
                     <td rowspan="2"><img src="./img/sympa.png"></td>
-                    <td class="text">빈칸</td>
+                    <td class="blank"></td>
                 </tr>
                 <tr>
                     <td rowspan="2"><img src="./img/tokyo_rendez_vous.png"></td>
                     <td rowspan="2"><img src="./img/ceremony.png"></td>
                 </tr>
                 <tr>
-                    <td class="text">빈칸</td>
+                    <td class="blank"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="content">
+            <table class="music">
+                <tr>
+                    <td><img src="./img/tokyo_rendez_vous.png"></td>
+                    <td>
+                        <h3>Tokyo Rendez-Vous</h3>
+                        <ol>
+                            <li>Tokyo Rendez-Vous</li>
+                            <li>McDonald Romance</li>
+                            <li>あなたは蜃気楼</li>
+                            <li>Vinyl</li>
+                            <li>破裂</li>
+                            <li>ロウラヴ</li>
+                            <li>NIGHT POOL</li>
+                            <li>サマーレイン・ダイバー</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+            <div class="line"></div>
+            <table class="music">
+                <tr>
+                    <td>
+                        <h3>Sympa</h3>
+                        <ol>
+                            <li>Sympa Ⅰ</li>
+                            <li>Slumberland</li>
+                            <li>Flash!!!</li>
+                            <li>Sorrows</li>
+                            <li>Sympa Ⅱ</li>
+                            <li>Hitman</li>
+                            <li>Don't Stop the Clocks</li>
+                            <li>It's a small world</li>
+                            <li>Sympa Ⅲ</li>
+                            <li>Prayer X</li>
+                            <li>Bedtown</li>
+                            <li>The hole</li>
+                            <li>Sympa Ⅳ</li>
+                        </ol>
+                    </td>
+                    <td><img src="./img/sympa.png"></td>
+                </tr>
+            </table>
+            <div class="line"></div>
+            <table class="music">
+                <tr>
+                    <td><img src="./img/ceremony.png"></td>
+                    <td>
+                        <h3>Ceremony</h3>
+                        <ol>
+                            <li>開会式</li>
+                            <li>どろん</li>
+                            <li>Teenager Forever</li>
+                            <li>ユーモア</li>
+                            <li>白日</li>
+                            <li>幕間</li>
+                            <li>飛行艇</li>
+                            <li>小さな惑星</li>
+                            <li>Overflow</li>
+                            <li>傘</li>
+                            <li>壇上</li>
+                            <li>閉会式</li>
+                        </ol>
+                    </td>
                 </tr>
             </table>
         </div>
